@@ -302,20 +302,9 @@ version = "0.1.0"
 dependencies = [
  "image",
  "imageproc",
- "imageutil",
  "once_cell",
  "rusttype",
  "tokio",
-]
-
-[[package]]
-name = "imageutil"
-version = "0.0.5"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a5488692111fae95763ea7e6470d6d81a8c7802c901d2cff4756cd9b11927bf7"
-dependencies = [
- "image",
- "rusttype",
 ]
 
 [[package]]
