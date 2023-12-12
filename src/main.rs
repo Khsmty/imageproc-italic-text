@@ -9,8 +9,7 @@ use rusttype::{Font, Scale};
 const INTER: Lazy<Font> =
     Lazy::new(|| Font::try_from_bytes(include_bytes!("../fonts/Inter-Regular.ttf")).unwrap());
 
-#[tokio::main]
-async fn main() {
+fn main() {
     let mut img = DynamicImage::new_rgba8(400, 100);
 
     let mut text_image = DynamicImage::new_rgba8(300, 80);
