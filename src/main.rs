@@ -38,7 +38,7 @@ fn main() {
     warp_into(
         &text_image.to_rgba8(),
         &matrix.unwrap(),
-        Interpolation::Bilinear,
+        Interpolation::Bilinear, // Bicubic を指定するとさらに滑らかになるが、遅くなる
         Rgba([0, 0, 0, 0]),
         &mut italic_text_image,
     );
